@@ -1,39 +1,55 @@
-target/
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
-.kotlin
+# =====================
+# Build & IDE files
+# =====================
+/out/
+/build/
+/target/
+/*.class
 
-### IntelliJ IDEA ###
-.idea/modules.xml
-.idea/jarRepositories.xml
-.idea/compiler.xml
-.idea/libraries/
-*.iws
+# IDEs
 *.iml
-*.ipr
-
-### Eclipse ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
-
-### VS Code ###
+.idea/
 .vscode/
+*.ipr
+*.iws
 
-### Mac OS ###
+# =====================
+# OS Files
+# =====================
 .DS_Store
+Thumbs.db
+desktop.ini
+
+# =====================
+# Logs
+# =====================
+*.log
+
+# =====================
+# Config files with secrets
+# =====================
+# Armazene suas senhas e tokens em um .env
+*.env
+config.properties
+*.keystore
+*.jks
+
+# =====================
+# Database files
+# =====================
+# Evite subir bancos reais
+*.db
+*.sqlite
+*.sqlite3
+
+# =====================
+# Temporary / backup files
+# =====================
+*~
+*.swp
+*.bak
+
+# =====================
+# Optional: IDE specific caches
+# =====================
+/.idea_modules/
