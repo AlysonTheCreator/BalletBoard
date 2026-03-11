@@ -39,6 +39,7 @@ config.properties
 # =====================
 # Evite subir bancos reais
 *.db
+*.db-journal
 *.sqlite
 *.sqlite3
 
