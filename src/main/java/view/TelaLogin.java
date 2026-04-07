@@ -27,7 +27,7 @@ public class TelaLogin extends JFrame {
 
 // Label de boas vindas
 
-        JLabel labelBemVindo = new JLabel("Seja Bem Vinda, Nina!");
+        JLabel labelBemVindo = new JLabel("Seja Bem-Vinda, Nina!");
         labelBemVindo.setBounds(163, 20, 450, 150);
         labelBemVindo.setFont(new Font("Strawberry", Font.BOLD, 70));
         add(labelBemVindo);
@@ -61,7 +61,7 @@ public class TelaLogin extends JFrame {
 
         // Botão Ocultar/Mostrar
         botaoOlho = new JButton("👁");
-        botaoOlho.setBounds(480,185,50,30);
+        botaoOlho.setBounds(480,185,60,40);
         botaoOlho.setOpaque(false);          // não pinta o fundo
         botaoOlho.setContentAreaFilled(false); // remove o preenchimento
         botaoOlho.setBorderPainted(false);     // remove borda
