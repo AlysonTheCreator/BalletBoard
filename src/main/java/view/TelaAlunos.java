@@ -2,9 +2,9 @@ package view;
 
 import javax.swing.*;
 
-public class TelaPlannerDeAulas extends JFrame {
-    public TelaPlannerDeAulas(){
-        setTitle("Planner de Aulas");
+public class TelaAlunos extends JFrame {
+    public TelaAlunos(){
+        setTitle("Tela Alunos");
         setSize(700,900);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setResizable(false);
@@ -12,4 +12,5 @@ public class TelaPlannerDeAulas extends JFrame {
 
         setVisible(true);
     }
+
 }

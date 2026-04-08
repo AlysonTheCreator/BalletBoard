@@ -5,6 +5,7 @@ import javax.swing.*;
 import java.awt.*;
 
 public class TelaPrincipal extends JFrame {
+    int xMouse, yMouse;
     public TelaPrincipal(){
         setTitle("Tela Principal");
         setSize(700,900);
@@ -25,11 +26,35 @@ public class TelaPrincipal extends JFrame {
         BotoesTelaPrincipal botaoPlannerFinanceiro = new BotoesTelaPrincipal("Planner Financeiro","/moranguinho05.jpg");
 
         botaoPlanner.setBounds(100,40,450,100);
+        botaoPlanner.addActionListener(e -> {
+            new TelaPlannerDeAulas();
+            dispose();
+        });
         botaoAlunos.setBounds(100,180,450,100);
+        botaoAlunos.addActionListener(e -> {
+            new TelaAlunos();
+            dispose();
+        });
         botaoHorarios.setBounds(100,320,450,100);
+        botaoHorarios.addActionListener(e->{
+            new TelaHorarios();
+            dispose();
+        });
         botaoDocumentacao.setBounds(100,460,450,100);
+        botaoDocumentacao.addActionListener(e -> {
+                    new TelaDocumentacoes();
+                    dispose();
+                });
         botaoPlaylist.setBounds(100,600,450,100);
+        botaoPlaylist.addActionListener(e -> {
+            new TelaPlaylist();
+            dispose();
+        });
         botaoPlannerFinanceiro.setBounds(100,740,450,100);
+        botaoPlannerFinanceiro.addActionListener(e -> {
+            new TelaPlannerFinanceiro();
+            dispose();
+        });
 
         add(botaoPlanner);
         add(botaoAlunos);
@@ -48,15 +73,7 @@ public class TelaPrincipal extends JFrame {
         private int raio = 120;
         private Image imagemFundo;
 
-        public BotoesTelaPrincipal(String texto) {
-            super(texto);
-            setContentAreaFilled(false); // remove o fundo padrão
-            setFocusPainted(false);
-            setBorderPainted(false);
-            setForeground(Color.BLACK);
-            setFont(new Font("Strawberry", Font.BOLD, 40));
 
-        }
 
         public BotoesTelaPrincipal(String texto, String caminhoImagem) {
             super(texto);
@@ -133,6 +150,7 @@ public class TelaPrincipal extends JFrame {
 
 
     }
+
 
 
     class ImagemdeFundo extends JPanel {
