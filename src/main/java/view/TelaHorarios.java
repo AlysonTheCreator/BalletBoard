@@ -55,7 +55,7 @@ public class TelaHorarios extends JFrame {
             }
         });
 
-        // 🟡 Permitir arrastar a janela
+        //  Permitir arrastar a janela
         barra.addMouseListener(new MouseAdapter() {
             public void mousePressed(MouseEvent e) {
                 xMouse = e.getX();
